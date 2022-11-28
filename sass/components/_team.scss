@@ -1,0 +1,16 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: $color-background-secondary;
+
+    &__title {
+      @extend %title;
+    }
+
+    &__box {
+      @extend %list;
+      display: flex;
+      padding-left: 0;
+    }
+}
+

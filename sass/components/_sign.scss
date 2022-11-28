@@ -1,0 +1,57 @@
+.sign__text {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $color-white;
+}
+
+.sign {
+  display: flex;
+  flex-wrap: nowrap;
+
+    &__input {
+      width: 358px;
+      padding: 15px 16px;
+      margin-right: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      background-color: transparent;
+      color: $color-white;
+      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__input::placeholder {
+      color: $color-footer-contact;
+    }
+
+    &__input:focus {
+      border: 1px solid $color-accent;
+      outline: transparent;
+    }
+
+    &__button {
+      @extend %button;
+      position: relative;
+      text-align: start;
+      width: 200px;
+      padding-left: 28px;
+      font-weight: 700;
+      background-color: $color-accent;
+      color: $color-white;
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.06em;
+    }  
+
+    &__icon {
+      position: absolute;
+      top: 50%;
+      right: 28px;
+      transform: translateY(-50%);
+    }
+}
